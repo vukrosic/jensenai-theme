@@ -1,0 +1,433 @@
+
+/*-----------------------------Generator Menu------------------------------------*/
+
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Mono:wght@700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Mono:wght@700&family=Secular+One&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+
+  	/*font-family: 'Roboto Mono', monospace;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------LOGIN REGISTER----------------------*/
+
+/*
+.logcontainer
+{
+    display: flex;
+}
+
+.login-and-about-container{
+	display: flex;
+	margin-right: 10%;
+}
+
+
+.generator{
+	margin-left: auto;
+	margin-right: 20px;
+    padding: 7px;
+    border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #ff0000, #a053df);
+    border-image-slice: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0) inset;
+	cursor: pointer;
+}
+
+.login{
+    
+    border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #008cff, #a053df);
+    border-image-slice: 1;
+    box-shadow: 3px 3px 7px rgb(0, 0, 0) inset;
+    padding: 7px;
+	cursor: pointer;
+}
+
+.account{
+    padding: 7px;
+    border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #008cff, #a053df);
+    border-image-slice: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0) inset;
+	cursor: pointer;
+}
+
+.register{
+	margin-right: 20px;
+	margin-left: auto;
+    padding: 7px;
+    border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #ff0000, #a053df);
+    border-image-slice: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0) inset;
+	cursor: pointer;
+}
+
+.about{
+	margin-left: auto;
+	margin-right: 10rem;
+    padding: 7px;
+    border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #ff0000, #a053df);
+    border-image-slice: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0) inset;
+	cursor: pointer;
+}
+
+
+.educational-video-tools{
+	margin-left: auto;
+    padding: 7px;
+    border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #ff0000, #a053df);
+    border-image-slice: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0) inset;
+	cursor: pointer;
+}
+
+
+
+@media (max-width: 475px) {
+
+	
+	.logcontainer
+	{
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.login-and-about-container{
+		margin-right: 0;
+		margin: auto;
+	}
+
+	.register, .login, .about{
+		margin: 0 8px;
+		margin-bottom: 10px;
+	}
+
+	.register{
+		font-size: 0.85rem;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+
+
+
+
+/*================LOGED IN===================*/
+
+/*
+
+	.account, .logedAbout, .generator{
+		margin:auto;
+		margin-bottom: 10px;
+	}
+	
+
+}
+
+*/
+
+
+
+
+
+
+/*-----------------------------------------------------------------Unloged user modifiers----------------------------------------------------------*/
+
+/*
+
+.logcontainerOnPageModifier
+{
+	align-items: center;
+	width: fit-content;
+	margin: auto;
+}
+
+
+
+
+.loginOnPageModifier{
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+
+.registerOnPageModifier{
+	margin-left: 20px;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------Menu----------------------------------------------------------*/
+
+/*
+
+
+.menu-container{
+	display: flex;
+	padding: 1em;
+}
+
+.menu-field{
+	padding: 1em;
+	cursor: pointer;
+	min-width: 128px;
+}
+
+
+
+ 
+
+.menu-challenges-container, .menu-education-container, .menu-psychology-container, .menu-minecraft-container, .menu-gaming-container,
+.menu-online-business-container, .menu-reactions-container, .menu-review-container{
+	display: none;
+}
+
+*/
+
+/*==============
+Computer Screen
+================*/
+
+/*
+
+@media (min-width: 476px) {
+
+	.field-container:hover{
+		background: var(--background-color);
+	}
+
+	.challenges:hover  + .menu-challenges-container, .menu-challenges-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+
+	.education:hover + .menu-education-container,  .menu-education-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+	.psychology:hover + .menu-psychology-container,  .menu-psychology-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+	.minecraft:hover + .menu-minecraft-container,  .menu-minecraft-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+	.gaming:hover + .menu-gaming-container,  .menu-gaming-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+	.online-business:hover + .menu-online-business-container,  .menu-online-business-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+
+
+	.reactions:hover  + .menu-reactions-container, .menu-reactions-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+
+	.review:hover + .menu-review-container,  .menu-review-container:hover{
+		display: block;
+		position: absolute;
+		background: var(--background-color);
+	}
+
+
+
+
+
+
+	.youtube-niche:hover{
+		background: rgb(131, 114, 114);
+	}
+
+}
+
+
+
+*/
+
+
+/*==============
+Phone Screen
+================*/
+/*
+@media (max-width: 475px) {
+	.menu-container{
+		flex-direction: column;
+	}
+
+	.menu-field{
+		padding: .75em;
+		text-align: center;
+	}
+
+	.youtube-niche{
+		background: var(--background-color);
+	}
+
+	.about{
+		margin: auto;
+	}
+
+}
+*/
+
+
+
+/*========
+NavBar
+========*/
+
+
+.navbar {
+	width: 100%;
+	height: 5rem;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar ul li {
+	float: left;
+	margin: 1rem;
+	margin-top: 1.5rem;
+}
+
+.navbar ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	font-weight: 600;
+}
+
+
+
+.navbar ul li a:hover {
+	color: rgba(255,255,255,.5);
+	transition: color .2s ease;
+}
+
+
+
+
+/*========
+Transparent square over the page
+========*/
+
+
+.box {
+    /*width: 95%;*/
+    height: 200rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+
+
+/*========
+White Canvas over the page
+========*/
+
+
+
+
+.white-canvas {
+	width: 100%;
+	height: 200rem;
+	background-color: white;
+	transform: skewY(-10deg);
+	position: absolute;
+	top: 18rem;
+	left: 0;
+	z-index:-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

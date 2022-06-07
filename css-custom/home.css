@@ -1,0 +1,124 @@
+.title {
+    color: #0a2553;
+    font-size: 5.3rem;
+    font-family: sans-serif;
+    text-align: left;
+    margin-top: 10rem;
+    margin-left: 7%;
+    font-weight: bold;
+}
+
+.title span {
+    display: block;
+}
+
+.subtitle {
+    color: #425460;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 1.4rem;
+    margin-left: 7%;
+    width: 35rem;
+}
+
+
+
+
+
+/*=============
+Analytics Images
+===============*/
+
+
+
+
+.img-analytics {
+    position: absolute;
+    top: 10rem;
+    left: 50rem;
+    max-width: 50rem;
+    content:url("../images/analytics.jpg");
+    border: 3px solid #121621;
+}
+
+.img-realtime {
+    position: absolute;
+    top: 13rem;
+    left: 98rem;
+    max-width: 20rem;
+    content:url("../images/realtime.jpg");
+    border: 3px solid #121621;
+}
+
+.img-thumb {
+    position: absolute;
+    top: 10rem;
+    left: 50rem;
+    max-width: 55rem;
+    content:url("../images/thumb1.jpg");
+    border: 3px solid #121621;
+}
+
+
+
+
+/*=====
+Buttons
+======*/
+
+
+
+.start-now{
+    color: white;
+    background-color: #0a2553;
+    border-radius: 5rem;
+    border-color: #0a2553;
+    margin-left: 13%;
+    margin-top: 1.5rem;
+    padding: .2rem .7rem;
+}
+
+.start-now:hover{
+    background-color: #39527e;
+    border-color: #39527e;
+}
+
+.contact{
+    color: #0a2553;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    border-color: white;
+    margin-left: 2rem;
+    padding: .2rem .7rem;
+}
+
+
+
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+button:after{
+    font-family: FontAwesome;
+    content: "\f061";
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+/*=====
+Examples:
+======*/
+
+
+
+
+.examples{
+    text-align: center;
+    color: #0a2553;
+    margin-top: 22rem;
+
+    font-weight: 400;
+}
