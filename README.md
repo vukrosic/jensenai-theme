@@ -1,2 +1,2 @@
 # jensenai-theme
-Wordpress theme for JensenAI.com
+Theme for JensenAI
