@@ -11,8 +11,8 @@ function load_css()
     wp_register_style( 'main', get_template_directory_uri() . '/css/main.css', array(), false, 'all' );
     wp_enqueue_style('main');
 
-    wp_register_style( 'menu-style', get_template_directory_uri(  ) . '/css-custom/menu-main.css', array(), false, 'all' );
-    wp_enqueue_style( 'menu-style' );
+    wp_register_style( 'header-style', get_template_directory_uri(  ) . '/css-custom/header.css', array(), false, 'all' );
+    wp_enqueue_style( 'header-style' );
 
 }
 
@@ -29,8 +29,8 @@ function load_js()
     wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script( 'bootstrap' );
 
-    wp_register_script('menu-script', get_template_directory_uri(  ) . '/js-custom/menu-main.js', array('jquery'), '', true);     
-    wp_enqueue_script( 'menu-script' ); 
+    wp_register_script('header-script', get_template_directory_uri(  ) . '/js-custom/header.js', array('jquery'), '', true);     
+    wp_enqueue_script( 'header-script' ); 
 
 
     
@@ -92,7 +92,7 @@ add_action('wp_enqueue_scripts', 'home');
 
 function generator() 
 {
-  if( is_front_page( 'generator' )) 
+  if( is_page( 'generator' )) 
   {
 
     wp_register_script( 'generator-script', get_template_directory_uri() . '/js-custom/generator.js', array(), false, true );
@@ -114,6 +114,103 @@ function generator()
 }
 
 add_action('wp_enqueue_scripts', 'generator');
+
+
+
+
+
+
+
+
+
+
+
+
+// PRICING
+
+function pricing() 
+{ 
+  if( is_page( 'pricing' )) 
+  {
+    wp_register_script( 'pricing-script', get_template_directory_uri() . '/js-custom/pricing.js', array(), false, true );
+    wp_enqueue_script('pricing-script');
+
+    
+
+    wp_register_style( 'pricing-style', get_template_directory_uri(  ) . '/css-custom/pricing.css', array(), false, 'all' );
+    wp_enqueue_style( 'pricing-style' );
+
+  }
+}
+
+add_action('wp_enqueue_scripts', 'pricing');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CONTACT
+
+function contact() 
+{ 
+  if( is_page( 'contact' )) 
+  {
+    wp_register_script( 'contact-script', get_template_directory_uri() . '/js-custom/contact.js', array(), false, true );
+    wp_enqueue_script('contact-script');
+
+    
+
+    wp_register_style( 'contact-style', get_template_directory_uri(  ) . '/css-custom/contact.css', array(), false, 'all' );
+    wp_enqueue_style( 'contact-style' );
+
+  }
+}
+
+add_action('wp_enqueue_scripts', 'contact');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ABOUT
+
+function about() 
+{ 
+  if( is_page( 'about' )) 
+  {
+    wp_register_script( 'about-script', get_template_directory_uri() . '/js-custom/about.js', array(), false, true );
+    wp_enqueue_script('about-script');
+
+    
+
+    wp_register_style( 'about-style', get_template_directory_uri(  ) . '/css-custom/about.css', array(), false, 'all' );
+    wp_enqueue_style( 'about-style' );
+
+  }
+}
+
+add_action('wp_enqueue_scripts', 'about');
+
 
 
 

@@ -9,7 +9,7 @@ Template Name: Google Signin
 <html lang="en">
   <head>
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="283451548490-4dim370e90pn7g32aq7ds1oj4akglbuk.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="913076875549-6pe09nrnnf7ifs9kh17oohss5n0h8r8e.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
@@ -30,5 +30,7 @@ Template Name: Google Signin
         console.log("ID Token: " + id_token);
       }
     </script>
+
+    <div>To ensure safety and prevent botting of our powerful AI models, OpenAI requires us to sign you up using your Google account (doesn't need to have a YouTube channel attached).</div>
   </body>
 </html>

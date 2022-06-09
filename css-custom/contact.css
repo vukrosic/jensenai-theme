@@ -1,0 +1,35 @@
+body {
+    background-color: #219ebc;
+    color:black;
+  }
+  .container {
+    font-family: "Arial";
+    max-width: 20rem;
+    margin: 0px auto;
+    margin-top: 7rem;
+    padding: 16px;
+    background-color: #ffffff;
+  }
+  input {
+    width: 94%;
+    padding: 8px;
+    margin: 8px 0px;
+    border: 1px solid #dddddd;
+  }
+  textarea {
+    width: 94%;
+    height: 10rem;
+    padding: 8px;
+    margin: 8px 0px;
+    border: 1px solid #dddddd;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #219ebc;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

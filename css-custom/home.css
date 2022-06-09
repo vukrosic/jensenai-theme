@@ -1,11 +1,39 @@
+
+.title-and-ideas-container{
+    display: flex;
+    
+}
+
+@media (max-width: 1000px) {
+	.title-and-ideas-container{
+	  flex-direction: column;
+	}
+
+}
+
+
+.container-title-and-subtitle{
+  margin-left: 10%;
+}
+
+
+
+
 .title {
-    color: #0a2553;
+    color: #023047;
     font-size: 5.3rem;
     font-family: sans-serif;
     text-align: left;
     margin-top: 10rem;
-    margin-left: 7%;
+    
     font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+	.title{
+    margin-top: 12vw;
+	  font-size: 10vw;
+	}
 }
 
 .title span {
@@ -13,14 +41,19 @@
 }
 
 .subtitle {
-    color: #425460;
+    color: #023047;
     font-size: 1.2rem;
     font-family: sans-serif;
     font-weight: 200;
     text-align: left;
     margin-top: 1.4rem;
-    margin-left: 7%;
     width: 35rem;
+}
+
+@media (max-width: 1000px) {
+	.subtitle{
+    width: 80vw;
+	}
 }
 
 
@@ -28,40 +61,106 @@
 
 
 /*=============
-Analytics Images
+Daily free
 ===============*/
 
 
-
-
-.img-analytics {
-    position: absolute;
-    top: 10rem;
-    left: 50rem;
-    max-width: 50rem;
-    content:url("../images/analytics.jpg");
-    border: 3px solid #121621;
+.container-daily-free{
+  margin-top: 5rem;
+  margin-left: 15rem;
+  display: flex;
+    
 }
 
-.img-realtime {
-    position: absolute;
-    top: 13rem;
-    left: 98rem;
-    max-width: 20rem;
-    content:url("../images/realtime.jpg");
-    border: 3px solid #121621;
+
+@media (max-width: 1000px) {
+	.container-daily-free{
+
+  margin: auto;
+  margin-top: 5rem;
+	}
+
 }
 
-.img-thumb {
-    position: absolute;
-    top: 10rem;
-    left: 50rem;
+
+
+
+
+
+
+
+
+
+.h3-daily-free{
+    text-align: center;
+    color: #425460;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+
+.img-daily-free {
+    
     max-width: 55rem;
     content:url("../images/thumb1.jpg");
-    border: 3px solid #121621;
 }
 
 
+/* 
+.arrow {
+    cursor: pointer;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: transform 0.1s;
+    width: 80px;
+    background-color: #425460;
+  }
+  .arrow-top, .arrow-bottom {
+    background-color: rgb(0, 4, 255);
+    height: 4px;
+    left: -5px;
+    top: 50%;
+    width: 100%;
+  }
+  .arrow-top:after, .arrow-bottom:after {
+    background-color: rgb(255, 0, 0);
+    content: "";
+    height: 100%;
+    top: 0;
+    transition: all 0.15s;
+  }
+  .arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  .arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  .arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  .arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+  .arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  .arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
+  .arrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  } */
 
 
 /*=====
@@ -69,15 +168,20 @@ Buttons
 ======*/
 
 
+.container-buttons{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .start-now{
     color: white;
-    background-color: #0a2553;
+    background-color: #219ebc;
     border-radius: 5rem;
-    border-color: #0a2553;
-    margin-left: 13%;
-    margin-top: 1.5rem;
-    padding: .2rem .7rem;
+    border-color: #219ebc;
+    padding: .5rem 1.7rem;
+    font-size: 1rem;
 }
 
 .start-now:hover{
@@ -90,35 +194,182 @@ Buttons
     background-color: white;
     border-radius: 10px 10px 0 0;
     border-color: white;
-    margin-left: 2rem;
+    margin-left: 5rem;
     padding: .2rem .7rem;
 }
 
 
 
-@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
-button:after{
-    font-family: FontAwesome;
-    content: "\f061";
-    font-size: 20px;
-    color: white;
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/*
+html {
+  font-size: 40px;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0f172a;
+
+  font-family: sans-serif;
+}*/
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.carousel:before {
+  content: "";
+  width: 100%;
+  height: 26.7rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+  pointer-events: none;
+
+  --bg: rgba(180, 180, 180, 0.342);
+
+  background: linear-gradient(
+    to right,
+    var(--bg),
+    transparent 10%,
+    transparent 90%,
+    var(--bg)
+  );
+}
+
+.slides {
+  width: 42.7rem;
+
+  display: flex;
+  gap: 80px;
+
+  padding: 1rem;
+  overflow-x: scroll;
+
+  scroll-behavior: smooth;
+  --tw-scroll-snap-strictness: mandatory;
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+
+
+@media (max-width: 1000px) {
+	.slides{
+    width: 90vw;
+    height: 50.625vw;
+	}
 }
 
 
 
 
 
-/*=====
-Examples:
-======*/
+
+
+
+.navigation {
+  gap: 26.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;
+}
+
+.navigation a {
+  color: #023047;
+  text-decoration: none;
+}
+
+.slide {
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 100%;
+  height: 21.3rem;
+
+  object-fit: cover;
+  background: #1e293b;
+
+  border: none;
+  border-radius: 0.5rem;
+}
+
+
+@media (max-width: 1000px) {
+	.slide{
+    width: 100%;
+    height: 100%;
+	}
+}
 
 
 
 
-.examples{
-    text-align: center;
-    color: #0a2553;
-    margin-top: 22rem;
 
-    font-weight: 400;
+.slides::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 9999px;
+  background-color: rgb(192, 192, 192);
+}
+
+.slides::-webkit-scrollbar {
+  height: 6px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 9999px;
+  background-color: #475569;
+}
+
+.slides::-webkit-scrollbar-thumb:hover {
+  background-color: #657791;
+}
+
+.slides::-webkit-scrollbar-thumb:active {
+  background-color: #38485e;
+}
+
+
+
+#slide-1 {
+    content:url("../images/thumb1.jpg");
+}
+
+#slide-2 {
+    content:url("../images/thumb2.jpg");
+}
+
+#slide-3 {
+    content:url("../images/thumb3.jpg");
 }

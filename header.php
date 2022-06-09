@@ -25,24 +25,28 @@
     
 
 
-
+<img class="menu-phone-icon">
 
 
 <div class="navbar">
 		<ul>
-			<li><a href="/">Home</a></li>
-				<li><a href="/generators">Generators</a></li>
+			  <li><a href="/">Home</a></li>
 				<li><a href="/pricing">Pricing</a></li>
+        <li><a href="/contact">Contact</a></li>
 				<li><a href="/about">About</a></li>
+        <!-- <button class="button-signup">Start Now</button> -->
+        <li><a href="/signup" class="button-signup">Start Now</a></li>
+        <li><a href="/login">Login</a></li>
 		</ul>
-	</div>
+
+    
+</div>
 
 
 
 
-  <div class="box"></div>
+  <!-- <div class="box"></div> -->
   <div class="white-canvas"></div>
-
 
 
 

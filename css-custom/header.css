@@ -6,8 +6,11 @@
 @import url(https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Mono:wght@700&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Mono:wght@700&family=Secular+One&display=swap');
 
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
+	
 
   	/*font-family: 'Roboto Mono', monospace;*/
 }
@@ -358,7 +361,7 @@ NavBar
 }
 
 .navbar ul li a {
-	display: block;
+	/*display: block;*/
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
@@ -376,28 +379,21 @@ NavBar
 }
 
 
+@media (max-width: 1000px) {
+	.navbar {
+		width: 100%;
+		height: 25rem;
+	}
+	.navbar ul {
+		height: 25rem;
+		flex-direction: column;
+		text-align: center;
+		margin: 5px;
+	}
+
+}
 
 
-/*========
-Transparent square over the page
-========*/
-
-
-.box {
-    /*width: 95%;*/
-    height: 200rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-  }
 
 
 
@@ -410,7 +406,7 @@ White Canvas over the page
 
 .white-canvas {
 	width: 100%;
-	height: 200rem;
+	height: 70rem;
 	background-color: white;
 	transform: skewY(-10deg);
 	position: absolute;
@@ -419,15 +415,76 @@ White Canvas over the page
 	z-index:-1;
 }
 
+@media (max-width: 1000px) {
+	.white-canvas {
+		top: 30rem;
+		margin: var(--screen-width-breakpoint);
+	}
+
+}
+
+
+
+
+/*===========
+SignUp button
+============*/
+
+
+
+.button-signup {
+    background-color: rgba(255, 255, 255, 0.473);
+    border: none;
+    color: white;
+	margin-left: 12rem;
+	border-radius: 6%;
+    /*padding: 1rem 1rem;*/
+	/*
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari *//*
+    transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+
+@media (max-width: 1000px) {
+	.button-signup {
+		margin-left: 0;
+	}
+
+}
+
+
+.button-signup:hover {
+    background-color: rgba(255, 255, 255, 0.219);
+}
 
 
 
 
 
+/*====================
+Phone open menu button
+=====================*/
 
 
+.menu-phone-icon{
+	display: none;
+}
 
+@media (max-width: 1000px) {
+	.menu-phone-icon {
+		content:url("../images/menu-icon.png");
+		display: block;
+		position: absolute;
+		right: 30px;
+		top: 80px;
+		width: 30px;
+		z-index: 2;
+	}
 
-
-
-
+}

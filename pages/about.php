@@ -9,18 +9,29 @@ Template Name: About
 
 
 
-
-<div style='font-size: clamp(20px, 2vw, 32px); margin-top:5%;'>
-
-    <div style='margin: 30px; '>JensenAI is a generative transformer trained to come up with YouTube video ideas.</div>
-
-    <div style='margin-left: 30px; font-size: clamp(20px, 1.5vw, 30px);'><b style="color: var(--link-color);">I will</b> build custom AI model for your channel such that you get unbelievable ideas at a click of a button.</div>
-
-    <div style= 'margin-left: 30px; margin-top: 25px;'>Contact at <b style="color: red;">contact@jensenai.com</b> or contact me directly on Twitter at <b style="color: red;">@JensenAIDev</b>.</div>
-
-
+<div class="container">
+  <header>
+    <h1 class="page-title">About Us</h1>
+  </header>
+  <main>
+    <article class="content">
+      <section class="content__descriptor">
+        <h2 class="content__title">Info</h2>
+      </section>
+      <section class="content__text-box">
+        <p class="content__text">
+            We aim to empower every YouTube creator by solving ideas
+            and thumbnails. We are looking to scale up and add new
+            niches as quickly as possible.
+        </p>
+        <p class="content__text">
+          To have a custom model built for your channel, contact us at <a href="/contact">contact</a>
+          or at contact@jensenai.com or DM on Twitter at @JensenAIDev.
+        </p>
+      </section>
+    </article>
+  </main>
 </div>
-
 
 
 

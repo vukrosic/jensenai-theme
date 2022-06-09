@@ -1,7 +1,7 @@
 /*------------------------------------Next Idea---------------------------------------*/
 
-
-document.querySelector('.generate-idea').addEventListener('click', () => {
+/*
+document.querySelector('.generator').addEventListener('click', () => {
 
     document.querySelector('.generate').style.pointerEvents = 'none';
     document.querySelector('.generate').style.background = 'grey' ;
@@ -23,4 +23,16 @@ document.querySelector('.generate-idea').addEventListener('click', () => {
     //Update database
     jQuery.post( '/generator-ai-api-call', data, function(response) {
     } )
+})
+*/
+
+
+/*------------------------------------Contact---------------------------------------*/
+
+
+
+document.querySelector('.contact').addEventListener('click', () => {
+
+    window.location = '/contact';
+    
 })
