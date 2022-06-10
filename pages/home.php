@@ -27,7 +27,7 @@ Template Name: Home
     
     <div class="container-daily-free">
 
-
+        <h3 class="h3-daily-free">Extreme $500,000 Game Of Tag!</h3>
 
 
         <section class="carousel">

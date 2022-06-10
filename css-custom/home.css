@@ -47,7 +47,7 @@
     font-weight: 200;
     text-align: left;
     margin-top: 1.4rem;
-    width: 35rem;
+    width: 30vw;
 }
 
 @media (max-width: 1000px) {
@@ -65,17 +65,17 @@ Daily free
 ===============*/
 
 
+
 .container-daily-free{
   margin-top: 5rem;
-  margin-left: 15rem;
-  display: flex;
+  margin-left: 10vw;
+  display: block;
     
 }
 
 
 @media (max-width: 1000px) {
 	.container-daily-free{
-
   margin: auto;
   margin-top: 5rem;
 	}
@@ -87,16 +87,19 @@ Daily free
 
 
 
-
-
-
-
 .h3-daily-free{
-    text-align: center;
-    color: #425460;
+    background:linear-gradient(to right, rgba(65, 65, 65, 0.192), white);
+    padding-left: 1.1rem;
     font-size: 2rem;
     font-family: sans-serif;
     font-weight: 200;
+}
+
+@media (max-width: 1000px) {
+	.h3-daily-free{
+    font-size: 1.3rem;
+	}
+
 }
 
 
@@ -175,6 +178,14 @@ Buttons
     align-items: center;
 }
 
+@media (max-width: 1000px) {
+	.container-buttons {
+		margin-top: 2rem;
+	}
+
+}
+
+
 .start-now{
     color: white;
     background-color: #219ebc;
@@ -198,6 +209,12 @@ Buttons
     padding: .2rem .7rem;
 }
 
+@media (max-width: 1000px) {
+	.contact {
+		margin-left: 10vw;
+	}
+
+}
 
 
 

@@ -158,6 +158,47 @@ add_action('wp_enqueue_scripts', 'pricing');
 
 
 
+
+
+
+// CHECKOUT
+
+function checkout() 
+{ 
+  if( is_page( 'checkout' )) 
+  {
+    wp_register_script( 'checkout-script', get_template_directory_uri() . '/js-custom/checkout.js', array(), false, true );
+    wp_enqueue_script('checkout-script');
+
+    
+
+    wp_register_style( 'checkout-style', get_template_directory_uri(  ) . '/css-custom/checkout.css', array(), false, 'all' );
+    wp_enqueue_style( 'checkout-style' );
+
+  }
+}
+
+add_action('wp_enqueue_scripts', 'checkout');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // CONTACT
 
 function contact() 

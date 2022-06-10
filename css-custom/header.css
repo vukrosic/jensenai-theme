@@ -10,7 +10,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	
+	color: #023047;
 
   	/*font-family: 'Roboto Mono', monospace;*/
 }
@@ -406,7 +406,7 @@ White Canvas over the page
 
 .white-canvas {
 	width: 100%;
-	height: 70rem;
+	height: 50rem;
 	background-color: white;
 	transform: skewY(-10deg);
 	position: absolute;
@@ -419,6 +419,7 @@ White Canvas over the page
 	.white-canvas {
 		top: 30rem;
 		margin: var(--screen-width-breakpoint);
+		height: 40rem;
 	}
 
 }
