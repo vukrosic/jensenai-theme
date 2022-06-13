@@ -31,6 +31,6 @@ Template Name: Google Signin
       }
     </script>
 
-    <div>To ensure safety and prevent botting of our powerful AI models, OpenAI requires us to sign you up using your Google account (doesn't need to have a YouTube channel attached).</div>
+    <div>To ensure safety and prevent misuse of our powerful AI models, please sign up with a Google account.</div>
   </body>
 </html>

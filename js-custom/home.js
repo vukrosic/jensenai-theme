@@ -27,12 +27,23 @@ document.querySelector('.generator').addEventListener('click', () => {
 */
 
 
-/*------------------------------------Contact---------------------------------------*/
+/*------------------------------------Buttons---------------------------------------*/
 
 
 
-document.querySelector('.contact').addEventListener('click', () => {
 
+
+
+// start now button event
+document.querySelector(".startnow.buttonhome").addEventListener("click", () => {
+    console.log("rly>");
+    window.location = '/google-signup';
+    
+});
+
+
+// contact button event
+document.querySelector(".contact.buttonhome").addEventListener("click", () => {
     window.location = '/contact';
     
-})
+});

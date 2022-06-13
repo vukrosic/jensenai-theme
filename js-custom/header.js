@@ -24,6 +24,21 @@ document.querySelector(".menu-phone-icon").addEventListener( 'click', () => {
 
 
 
+if(document.querySelector(".startnowheader.button") != null)
+{
+    // start now button event
+    document.querySelector(".startnowheader.button").addEventListener("click", () => {
+        window.location = '/google-signup';
+        
+    });
+
+}
+
+
+
+//Psychology
+// document.querySelector(".ideas_left").textContent = 'Ideas: ' + '343';
+
 
 
 /*============

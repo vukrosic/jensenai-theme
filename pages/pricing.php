@@ -28,8 +28,7 @@ Template Name: Pricing
                     <h3 class="pricing-title">Unlimited</h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature">Idea (title)</li>
-                    <li class="pricing-feature">Thumbnail</li>
+                    <li class="pricing-feature">Click 'Generate' and enjoy ideas.</li>
                 </ul>
                 <button class="pricing-action">Start Now</button>
             </div>

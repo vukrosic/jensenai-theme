@@ -28,25 +28,63 @@
 <img class="menu-phone-icon">
 
 
+
+
+
+<?php
+if ( !is_user_logged_in() ) {
+?>
+
+
+
 <div class="navbar">
 		<ul>
 			  <li><a href="/">Home</a></li>
 				<li><a href="/pricing">Pricing</a></li>
         <li><a href="/contact">Contact</a></li>
 				<li><a href="/about">About</a></li>
-        <!-- <button class="button-signup">Start Now</button> -->
-        <li><a href="/signup" class="button-signup">Start Now</a></li>
+        <li style="margin: 13px;"><button class="startnowheader button">Start  Now</button></li>
         <li><a href="/login">Login</a></li>
+		</ul>
+</div>
+
+
+
+
+<?php 
+} else {
+?>
+
+
+<div class="navbar">
+		<ul>
+			  <li><a href="/">Home</a></li>
+        <li><a href="/generator">Generator</a>
+          <ul>
+              <li><a href="/challenges">Challenges</a></li>
+              <li><a href="/documentary">Documentary</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+				<li><a href="/about">About</a></li>
+        <li><a href="/login">Logout</a></li>
+        <!-- <div class="ideas_left">Ideas: </div> -->
+        
 		</ul>
 
     
 </div>
 
 
+<?php 
+}
+?>
+
+
 
 
   <!-- <div class="box"></div> -->
-  <div class="white-canvas"></div>
+  <!-- <div class="white-canvas"></div> -->
 
 
 

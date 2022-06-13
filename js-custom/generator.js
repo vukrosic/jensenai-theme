@@ -1,11 +1,11 @@
 /*------------------------------------On First Load---------------------------------------*/
 
 
-update_generator_title('MrBeast');
-setGenerator('MrBeast');
+//update_generator_title('MrBeast');
+//setGenerator('MrBeast');
 
 
-
+let generator = 'challenges';
 
 
 
@@ -14,28 +14,40 @@ setGenerator('MrBeast');
 /*------------------------------------Generate---------------------------------------*/
 
 
-document.querySelector('.generate-idea').addEventListener('click', () => {
+document.querySelector('.generate-button').addEventListener('click', () => {
 
-    document.querySelector('.generate').style.pointerEvents = 'none';
-    document.querySelector('.generate').style.background = 'grey' ;
+
 
     //Set generator
     let data = {
         'generator' : generator
     };
 
+
+    console.log(generator);
     //Get title
     jQuery.post( '/generator-return-idea', data, function(response) {
         let idea = response.replace(/(\r\n|\n|\r)/gm, "");
-        document.querySelector('.titleText').innerText = idea;
-        document.querySelector('.generate').style.pointerEvents = 'auto';
-        document.querySelector('.generate').style.background = 'red' ;
+        document.querySelector('.idea').innerText = idea;
+        console.log(response);
     } )
     
     
-    //Update database
-    jQuery.post( '/generator-ai-api-call', data, function(response) {
-    } )
+    
+
+    
+    
+
+    let random = Math.floor(Math.random() * 50);
+
+    if (random < 2) {
+        //Update database
+        jQuery.post( '/generator-ai-api-call', data, function(response) {
+            console.log(response);
+        })
+    }
+
+    
 })
 
 
@@ -48,9 +60,10 @@ document.querySelector('.generate-idea').addEventListener('click', () => {
 
 /*-------------------------------------Update Generator Title---------------------------------------*/
 
-function update_generator_title(generator_name)
+function update_generator(generator_name)
 {
-    document.querySelector('.explanation').innerText = '(っ◔◡◔)っ  ' + generator_name.replace(/_/g," ") + ' idea generator';
+    generator = generator_name;
+    console.log(generator);
     
 }
 

@@ -1,10 +1,9 @@
 body {
-    background-color: #219ebc;
     color:black;
   }
   .container {
     font-family: "Arial";
-    max-width: 20rem;
+    max-width: 22rem;
     margin: 0px auto;
     margin-top: 7rem;
     padding: 16px;

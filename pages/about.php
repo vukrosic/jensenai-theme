@@ -20,13 +20,13 @@ Template Name: About
       </section>
       <section class="content__text-box">
         <p class="content__text">
-            We aim to empower every YouTube creator by solving ideas
-            and thumbnails. We are looking to scale up and add new
+            We aim to empower every YouTube creator by solving ideas. 
+            We are looking to scale up and add new
             niches as quickly as possible.
         </p>
         <p class="content__text">
           To have a custom model built for your channel, contact us at <a href="/contact">contact</a>
-          or at contact@jensenai.com or DM on Twitter at @JensenAIDev.
+          or at contact@latentgenlabs.com or DM on Twitter at @LatentGenLabs.
         </p>
       </section>
     </article>

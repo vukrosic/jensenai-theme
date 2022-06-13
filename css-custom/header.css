@@ -338,13 +338,13 @@ NavBar
 	z-index: 1;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 .navbar ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -352,12 +352,14 @@ NavBar
 	bottom: 0;
 	display: flex;
 	justify-content: center;
+	overflow: visible;
 }
 
 .navbar ul li {
 	float: left;
 	margin: 1rem;
 	margin-top: 1.5rem;
+
 }
 
 .navbar ul li a {
@@ -369,6 +371,33 @@ NavBar
 	font-size: 1.1rem;
 	font-family: sans-serif;
 	font-weight: 600;
+}
+
+.navbar ul li ul {
+	display: none;
+	background-color: purple;
+}
+
+.navbar ul li:hover ul {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.ideas_left {
+	color: white;
+	text-align: center;
+	margin-left: 13rem;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	font-weight: 600;
+	border: 2px solid #ffffff;
+    border-image: linear-gradient(to right bottom, #008cff, #a053df);
+    border-image-slice: 1;
+    box-shadow: 3px 3px 7px rgb(0, 0, 0) inset;
+	padding: 15px;
+	align-content: center;
 }
 
 
@@ -489,3 +518,35 @@ Phone open menu button
 	}
 
 }
+
+
+
+
+
+
+/*==============
+Start Now button
+===============*/
+
+
+
+.startnowheader {
+	background-color: #4CAF50;
+  }
+
+
+
+  
+  .button {
+	z-index: 1;
+	border-radius: 10px;
+	width: 150px;
+	height: 50px;
+	border-width: 0px;
+	box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	color: white;
+	font-size: 20px;
+	transition: opacity 0.3s;
+
+	margin-left: 10rem;
+  }
