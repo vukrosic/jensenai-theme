@@ -138,7 +138,7 @@
     max-width: 1250px;
     margin: auto;
     min-height: 50rem;
-    display: block;
+    display: inline;
   }
   .header {
     margin: 35px 0 60px 0px;
@@ -201,24 +201,40 @@
     color: rgba(0, 0, 0, 0.1);
   }
   
-  .selectColor {
+  .selectColor-container {
+
+    width: 150px;
+    margin:auto;
+    margin-top: 5.5rem;
+  }
+
+
+  .selectColor{
     position: relative;
     padding: 10px;
     border: none;
     border-right: 10px solid #fff;
     outline: none;
-    width: 200px;
+    width: 100%;
     border-radius: 4px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    margin-left: 31.8rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); 
+    
     margin-top: 5.5rem;
     background-color:#f1acff;
   }
 
 
+  @media screen and (max-width: 920px) {
+    .selectColor-container{
+      margin-top: 0;
+    }
 
+    .selectColor{
+      margin-top: 2.5rem;
+    }
+  }
 
-
+  
 
 
 
@@ -241,17 +257,8 @@
     margin: auto;
     display: block;
   }
-  .land-info {
-    min-width: 60%;
-    height: auto;
-    color: white;
-    /*border: 1px solid black;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 40px 0 0 20px;
-  }
+
+  
   .idea {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -260,8 +267,32 @@
     box-shadow: 3px 3px 7px rgb(0, 0, 0) inset;
     padding: 1.2rem;
     background-color: #00000073;
-    min-width: 80rem;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
   }
+
+
+
+  @media screen and (max-width: 920px) {
+    .idea {
+      font-size: 15px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   .desc {
     margin-top: 8px;
     font-size: 18px;
@@ -270,6 +301,11 @@
     padding: 2rem;
     background-color: #00000073;
     min-width: 80rem;
+  }
+
+  .generate-button-div {
+    width: 220px;
+    margin: auto;
   }
   .generate-button {
     font-size: 20px;
@@ -282,7 +318,6 @@
     box-shadow: 0 8px 17px -8px black;
     cursor: pointer;
     border: 3px solid white;
-    margin-left: 31.2rem;
     margin-bottom: 2rem;
     margin-top: 5rem;
   }
@@ -347,8 +382,7 @@
     .generate-button {
       width: 200px;
       padding: 2px;
-      margin: auto;
-      margin-top: 20px;
+      margin-top: 4rem;
     }
     .social-icons {
       justify-content: center;

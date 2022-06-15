@@ -33,7 +33,10 @@ document.querySelector('.generate-button').addEventListener('click', () => {
     } )
     
     
-    
+    //Update database
+    jQuery.post( '/generator-ai-api-call', data, function(response) {
+        console.log(response);
+    })
 
     
     
@@ -41,10 +44,7 @@ document.querySelector('.generate-button').addEventListener('click', () => {
     let random = Math.floor(Math.random() * 50);
 
     if (random < 2) {
-        //Update database
-        jQuery.post( '/generator-ai-api-call', data, function(response) {
-            console.log(response);
-        })
+        
     }
 
     

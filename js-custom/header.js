@@ -5,14 +5,12 @@ document.querySelector(".menu-phone-icon").addEventListener( 'click', () => {
     if(navbar_displayed)
     {
         document.querySelector(".navbar").style.display = 'none';
-        document.querySelector(".white-canvas").style.top = '1rem';
     }
     
         
     else
     {
         document.querySelector(".navbar").style.display = 'block';
-        document.querySelector(".white-canvas").style.top = '30rem';
     }
         
     
@@ -36,8 +34,8 @@ if(document.querySelector(".startnowheader.button") != null)
 
 
 
-//Psychology
-// document.querySelector(".ideas_left").textContent = 'Ideas: ' + '343';
+//Ideas left
+document.querySelector(".ideas_left").textContent = 'Ideas: ' + '343';
 
 
 

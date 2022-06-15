@@ -43,7 +43,7 @@ if ( !is_user_logged_in() ) {
 				<li><a href="/pricing">Pricing</a></li>
         <li><a href="/contact">Contact</a></li>
 				<li><a href="/about">About</a></li>
-        <li style="margin: 13px;"><button class="startnowheader button">Start  Now</button></li>
+        <li style="margin: 13px;"><button class="startnowheader button">Free Trial</button></li>
         <li><a href="/login">Login</a></li>
 		</ul>
 </div>
@@ -59,16 +59,11 @@ if ( !is_user_logged_in() ) {
 <div class="navbar">
 		<ul>
 			  <li><a href="/">Home</a></li>
-        <li><a href="/generator">Generator</a>
-          <ul>
-              <li><a href="/challenges">Challenges</a></li>
-              <li><a href="/documentary">Documentary</a></li>
-            </ul>
-        </li>
+        <li><a href="/generator">Generator</a></li>
         <li><a href="/contact">Contact</a></li>
 				<li><a href="/about">About</a></li>
         <li><a href="/login">Logout</a></li>
-        <!-- <div class="ideas_left">Ideas: </div> -->
+        <div class="ideas_left"></div>
         
 		</ul>
 

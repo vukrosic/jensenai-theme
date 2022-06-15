@@ -29,7 +29,7 @@ Template Name: Home
         </div> -->
 
         <div class="button-container">
-            <button class="startnow buttonhome">Start  Now</button>
+            <button class="startnow buttonhome">Free Trial</button>
             <button class="contact buttonhome">Contact</button>
         </div>
 

@@ -43,7 +43,7 @@ function getNumberOfIdeas($generator)
 
     if($numOfIdeas < 100)
     {
-        //updateIdeas($generator);
+        updateIdeas($generator);
     }
 }
     
@@ -277,7 +277,7 @@ function updateIdeas($generator)
 
     //Call API
     $response = callAPI($method, $url, $promptData);
-
+    echo $response;
     
     print_r($response);
 

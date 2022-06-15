@@ -44,19 +44,23 @@ Template Name: Generator
         <div class="main-container">
           <div class="container-wrap">
 
-          <select class="selectColor" onchange="update_generator(value)">
-            <option value="challenges">Challenges</option>
-            <option value="documentary">Documentary</option>
-          </select>
+          <div class="selectColor-container">
+            <select class="selectColor" onchange="update_generator(value)">
+              <option value="challenges">Challenges</option>
+              <option value="documentary">Documentary</option>
+            </select>
+          </div>
             
+          <div class="generate-button-div">
             <button class="generate-button" type="submit">Generate</button>
-            <div class="main-section">
-              <!-- <div class="land-img">
-                <img src="https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/illustration-mockups_qrukpf.svg" alt="mockups" />
-              </div> -->
-              <div class="land-info">
-                <div class="idea">How The Fashion Industry Is Polluting The Planet</div>
-                <br><br>
+          </div>
+          <div class="main-section">
+            <!-- <div class="land-img">
+              <img src="https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/illustration-mockups_qrukpf.svg" alt="mockups" />
+            </div> -->
+
+          <div class="idea">Click generate</div>
+          <br><br>
 
                 
 <!-- 
@@ -97,7 +101,7 @@ Template Name: Generator
 
                 </p> -->
                 
-              </div>
+
             </div>
             <!-- <div class="social-icons">
               <i class="fab fa-facebook-f"><a href="https://www.facebook.com" target="_blank">

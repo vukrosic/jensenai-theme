@@ -20,13 +20,16 @@ Template Name: About
       </section>
       <section class="content__text-box">
         <p class="content__text">
-            We aim to empower every YouTube creator by solving ideas. 
-            We are looking to scale up and add new
-            niches as quickly as possible.
+          Our short term goal is to build 100x better-than-human
+          YouTube idea AI.
+          Our long term goal is to help build AGI that
+          benefits all of humanity.
+
+            
         </p>
         <p class="content__text">
           To have a custom model built for your channel, contact us at <a href="/contact">contact</a>
-          or at contact@latentgenlabs.com or DM on Twitter at @LatentGenLabs.
+          or at contact@jensenai.com or DM me on Twitter at @JensenAIDev. We will reply within 12 hours.
         </p>
       </section>
     </article>
