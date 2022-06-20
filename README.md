@@ -1,2 +1,2 @@
 # jensenai-theme
-Theme for JensenAI
+Theme for JensenAI.com
